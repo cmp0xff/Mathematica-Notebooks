@@ -1,0 +1,246 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7568,        236]
+NotebookOptionsPosition[      7023,        214]
+NotebookOutlinePosition[      7358,        229]
+CellTagsIndexPosition[      7315,        226]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DSolve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox["\[ImaginaryI]", "\[Kappa]"]}], 
+      RowBox[{
+       RowBox[{"A", "'"}], "[", "\[Eta]", "]"}]}], "\[Equal]", 
+     RowBox[{"1", "-", 
+      SuperscriptBox[
+       RowBox[{"A", "[", "\[Eta]", "]"}], "2"]}]}], ",", 
+    RowBox[{"A", "[", "\[Eta]", "]"}], ",", "\[Eta]"}], "]"}], "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{"TrigExpand", "[", "%", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cosh", "[", 
+       RowBox[{"C", "[", "1", "]"}], "]"}], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      RowBox[{"Sinh", "[", 
+       RowBox[{"C", "[", "1", "]"}], "]"}], "\[Rule]", 
+      RowBox[{"Tanh", "[", 
+       RowBox[{"C", "[", "1", "]"}], "]"}]}]}], "}"}]}], "//", 
+  "Flatten"}], "\[IndentingNewLine]", 
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"A", "[", "\[Eta]", "]"}], "/.", "%"}], "/.", 
+     RowBox[{"\[Eta]", "\[Rule]", "0"}]}], ")"}], "\[Equal]", 
+   RowBox[{"Coth", "[", 
+    FractionBox[
+     RowBox[{"\[Pi]", " ", "\[Kappa]"}], 
+     RowBox[{"2", " ", "a"}]], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"Tanh", "[", 
+    RowBox[{"C", "[", "1", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%%%", "/.", "%"}], "//", "Simplify"}]}], "Input",
+ CellChangeTimes->{{3.683629390291997*^9, 3.683629834382825*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"A", "[", "\[Eta]", "]"}], "\[Rule]", 
+    RowBox[{"\[ImaginaryI]", " ", 
+     RowBox[{"Tan", "[", 
+      RowBox[{
+       RowBox[{"\[Eta]", " ", "\[Kappa]"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{"C", "[", "1", "]"}]}]}], "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834915356*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"A", "[", "\[Eta]", "]"}], "\[Rule]", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[ImaginaryI]", " ", 
+       RowBox[{"Cosh", "[", 
+        RowBox[{"C", "[", "1", "]"}], "]"}], " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+        RowBox[{"Cosh", "[", 
+         RowBox[{"C", "[", "1", "]"}], "]"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+        RowBox[{"Sinh", "[", 
+         RowBox[{"C", "[", "1", "]"}], "]"}]}]}]], "-", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+       RowBox[{"Sinh", "[", 
+        RowBox[{"C", "[", "1", "]"}], "]"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+        RowBox[{"Cosh", "[", 
+         RowBox[{"C", "[", "1", "]"}], "]"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+        RowBox[{"Sinh", "[", 
+         RowBox[{"C", "[", "1", "]"}], "]"}]}]}]]}]}], "}"}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834928699*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"A", "[", "\[Eta]", "]"}], "\[Rule]", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[ImaginaryI]", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}]}], 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], "-", 
+      RowBox[{"\[ImaginaryI]", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+       RowBox[{"Tanh", "[", 
+        RowBox[{"C", "[", "1", "]"}], "]"}]}]}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+      RowBox[{"Tanh", "[", 
+       RowBox[{"C", "[", "1", "]"}], "]"}]}], 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], "-", 
+      RowBox[{"\[ImaginaryI]", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Eta]", " ", "\[Kappa]"}], "]"}], " ", 
+       RowBox[{"Tanh", "[", 
+        RowBox[{"C", "[", "1", "]"}], "]"}]}]}]]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834930672*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Coth", "[", 
+   FractionBox[
+    RowBox[{"\[Pi]", " ", "\[Kappa]"}], 
+    RowBox[{"2", " ", "a"}]], "]"}], "\[Equal]", 
+  RowBox[{"-", 
+   RowBox[{"Tanh", "[", 
+    RowBox[{"C", "[", "1", "]"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834931821*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Tanh", "[", 
+     RowBox[{"C", "[", "1", "]"}], "]"}], "\[Rule]", 
+    RowBox[{"-", 
+     RowBox[{"Coth", "[", 
+      FractionBox[
+       RowBox[{"\[Pi]", " ", "\[Kappa]"}], 
+       RowBox[{"2", " ", "a"}]], "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834932921*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"A", "[", "\[Eta]", "]"}], "\[Rule]", 
+    RowBox[{"Coth", "[", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Pi]", "+", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", "a", " ", "\[Eta]"}]}], 
+        ")"}], " ", "\[Kappa]"}], 
+      RowBox[{"2", " ", "a"}]], "]"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.683629427161828*^9, 3.683629506697998*^9}, {
+  3.683629584066776*^9, 3.683629649722192*^9}, {3.683629697263924*^9, 
+  3.683629834934114*^9}}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.683629794819326*^9, 3.683629832554307*^9}]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 555}, {90, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (32-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1563, 46, 194, "Input"],
+Cell[2146, 70, 513, 13, 32, "Output"],
+Cell[2662, 85, 1555, 43, 160, "Output"],
+Cell[4220, 130, 1217, 33, 55, "Output"],
+Cell[5440, 165, 415, 11, 47, "Output"],
+Cell[5858, 178, 477, 13, 47, "Output"],
+Cell[6338, 193, 557, 15, 51, "Output"]
+}, Open  ]],
+Cell[6910, 211, 109, 1, 50, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,385 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12472,        377]
+NotebookOptionsPosition[     12007,        356]
+NotebookOutlinePosition[     12344,        371]
+CellTagsIndexPosition[     12301,        368]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["a", "2"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       SuperscriptBox["a", "2"], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["b", "2"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       SuperscriptBox["b", "2"], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["a", "2"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       SuperscriptBox["a", "2"], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["b", "2"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       SuperscriptBox["b", "2"], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}]}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Epsilon]", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.67196646861005*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["a", "2"], " ", 
+      SuperscriptBox["\[Alpha]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["a", "2"], " ", 
+        SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["b", "2"], " ", 
+      SuperscriptBox["\[Alpha]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["b", "2"], " ", 
+        SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["a", "2"], " ", 
+      SuperscriptBox["\[Beta]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["a", "2"], " ", 
+        SuperscriptBox["\[Beta]", "2"]}], "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["b", "2"], " ", 
+      SuperscriptBox["\[Beta]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["b", "2"], " ", 
+        SuperscriptBox["\[Beta]", "2"]}], "]"}]}]}], ")"}], "+", 
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", "\[Alpha]"}], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", "\[Alpha]"}], "-", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", "\[Beta]"}], "-", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", "\[Beta]"}], "+", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", "\[Alpha]", " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["a", "2"], " ", 
+         SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", "\[Alpha]", " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", 
+         SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "-", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", "\[Beta]", " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["a", "2"], " ", 
+         SuperscriptBox["\[Beta]", "2"]}], "]"}]}], "-", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", "\[Beta]", " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", 
+         SuperscriptBox["\[Beta]", "2"]}], "]"}]}]}], ")"}], " ", 
+    "\[Epsilon]"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"6", " ", 
+       SuperscriptBox["a", "2"]}], "+", 
+      RowBox[{"6", " ", 
+       SuperscriptBox["b", "2"]}], "+", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["a", "2"], " ", 
+         SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", 
+         SuperscriptBox["\[Alpha]", "2"]}], "]"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["a", "2"], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["a", "2"], " ", 
+         SuperscriptBox["\[Beta]", "2"]}], "]"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", 
+         SuperscriptBox["\[Beta]", "2"]}], "]"}]}]}], ")"}], " ", 
+    SuperscriptBox["\[Epsilon]", "2"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "\[Epsilon]", "]"}], "3"],
+    SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`\[Epsilon], 
+   0, {$CellContext`a^2 $CellContext`\[Alpha]^2 
+     Log[$CellContext`a^2 $CellContext`\[Alpha]^2] + $CellContext`b^2 \
+$CellContext`\[Alpha]^2 
+     Log[$CellContext`b^2 $CellContext`\[Alpha]^2] + $CellContext`a^2 \
+$CellContext`\[Beta]^2 
+     Log[$CellContext`a^2 $CellContext`\[Beta]^2] + $CellContext`b^2 \
+$CellContext`\[Beta]^2 Log[$CellContext`b^2 $CellContext`\[Beta]^2], 
+    2 ($CellContext`a^2 $CellContext`\[Alpha] + $CellContext`b^2 \
+$CellContext`\[Alpha] - $CellContext`a^2 $CellContext`\[Beta] - \
+$CellContext`b^2 $CellContext`\[Beta] + $CellContext`a^2 \
+$CellContext`\[Alpha] 
+      Log[$CellContext`a^2 $CellContext`\[Alpha]^2] + $CellContext`b^2 \
+$CellContext`\[Alpha] 
+      Log[$CellContext`b^2 $CellContext`\[Alpha]^2] - $CellContext`a^2 \
+$CellContext`\[Beta] 
+     Log[$CellContext`a^2 $CellContext`\[Beta]^2] - $CellContext`b^2 \
+$CellContext`\[Beta] Log[$CellContext`b^2 $CellContext`\[Beta]^2]), 
+    6 $CellContext`a^2 + 
+    6 $CellContext`b^2 + $CellContext`a^2 
+     Log[$CellContext`a^2 $CellContext`\[Alpha]^2] + $CellContext`b^2 
+     Log[$CellContext`b^2 $CellContext`\[Alpha]^2] + $CellContext`a^2 
+     Log[$CellContext`a^2 $CellContext`\[Beta]^2] + $CellContext`b^2 
+     Log[$CellContext`b^2 $CellContext`\[Beta]^2]}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.67196435002114*^9, 3.671966469895105*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["a", "2"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["a", "2"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], 
+     "+", 
+     RowBox[{
+      SuperscriptBox["b", "2"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["b", "2"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], 
+     "+", 
+     RowBox[{
+      SuperscriptBox["a", "2"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["a", "2"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["b", "2"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        SuperscriptBox["b", "2"], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"]}], "]"}]}]}], "/.", 
+    RowBox[{"b", "\[Rule]", 
+     SqrtBox[
+      RowBox[{"1", "-", 
+       SuperscriptBox["a", "2"]}]]}]}], ",", 
+   RowBox[{"a", "\[Rule]", "0"}], ",", 
+   RowBox[{"Direction", "\[Rule]", 
+    RowBox[{"-", "1"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Series", "[", 
+   RowBox[{"%", ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Epsilon]", ",", "0", ",", "2"}], "}"}]}], "]"}], "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.6719637747003307`*^9, 3.67196386939015*^9}, {
+  3.6719639186094637`*^9, 3.6719639491051025`*^9}, {3.6719641511595535`*^9, 
+  3.6719642318079405`*^9}, {3.671964264276044*^9, 3.6719643570978637`*^9}, {
+  3.6719644153997097`*^9, 3.67196449568366*^9}, {3.671966510154449*^9, 
+  3.671966512134792*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], " ", 
+   RowBox[{"Log", "[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"\[Beta]", "-", "\[Epsilon]"}], ")"}], "2"], "]"}]}], "+", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], " ", 
+   RowBox[{"Log", "[", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"\[Alpha]", "+", "\[Epsilon]"}], ")"}], "2"], 
+    "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.671963862735301*^9, 3.6719638697007723`*^9}, {
+   3.6719642198942423`*^9, 3.671964232625942*^9}, {3.6719643074874587`*^9, 
+   3.6719643582842655`*^9}, 3.6719644379651365`*^9, 3.6719644967159295`*^9, 
+   3.671966513211657*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Alpha]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       SuperscriptBox["\[Alpha]", "2"], "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Beta]", "2"], " ", 
+      RowBox[{"Log", "[", 
+       SuperscriptBox["\[Beta]", "2"], "]"}]}]}], ")"}], "+", 
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{"\[Alpha]", "-", "\[Beta]", "+", 
+      RowBox[{"\[Alpha]", " ", 
+       RowBox[{"Log", "[", 
+        SuperscriptBox["\[Alpha]", "2"], "]"}]}], "-", 
+      RowBox[{"\[Beta]", " ", 
+       RowBox[{"Log", "[", 
+        SuperscriptBox["\[Beta]", "2"], "]"}]}]}], ")"}], " ", "\[Epsilon]"}],
+    "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"6", "+", 
+      RowBox[{"Log", "[", 
+       SuperscriptBox["\[Alpha]", "2"], "]"}], "+", 
+      RowBox[{"Log", "[", 
+       SuperscriptBox["\[Beta]", "2"], "]"}]}], ")"}], " ", 
+    SuperscriptBox["\[Epsilon]", "2"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "\[Epsilon]", "]"}], "3"],
+    SeriesData[$CellContext`\[Epsilon], 0, {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`\[Epsilon], 
+   0, {$CellContext`\[Alpha]^2 
+     Log[$CellContext`\[Alpha]^2] + $CellContext`\[Beta]^2 
+     Log[$CellContext`\[Beta]^2], 
+    2 ($CellContext`\[Alpha] - $CellContext`\[Beta] + $CellContext`\[Alpha] 
+      Log[$CellContext`\[Alpha]^2] - $CellContext`\[Beta] 
+     Log[$CellContext`\[Beta]^2]), 6 + Log[$CellContext`\[Alpha]^2] + 
+    Log[$CellContext`\[Beta]^2]}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.671963862735301*^9, 3.6719638697007723`*^9}, {
+   3.6719642198942423`*^9, 3.671964232625942*^9}, {3.6719643074874587`*^9, 
+   3.6719643582842655`*^9}, 3.6719644379651365`*^9, 3.6719644967159295`*^9, 
+   3.671966513428781*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 745},
+WindowMargins->{{549, Automatic}, {102, Automatic}},
+FrontEndVersion->"10.4 for Linux x86 (32-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1587, 51, 62, "Input"],
+Cell[2170, 75, 4874, 131, 135, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7081, 211, 2269, 68, 132, "Input"],
+Cell[9353, 281, 783, 22, 37, "Output"],
+Cell[10139, 305, 1852, 48, 95, "Output"]
+}, Open  ]]
+}
+]
+*)
+
